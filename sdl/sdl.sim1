@@ -1,0 +1,79 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="768,436" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" eeprom="49,49,49,49,0," Frequency="16 MHz" Program="sdl.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Servo" CircId="Servo-2" mainComp="false" ShowProp="Speed" Show_id="true" Show_Val="true" Pos="976,524" rotation="0" hflip="1" vflip="1" label="Servo-2" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Speed="1 _sec/60º" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" />
+
+<item itemtype="AudioOut" CircId="AudioOut-4" mainComp="false" Show_id="false" Show_Val="false" Pos="620,484" rotation="0" hflip="-1" vflip="1" label="AudioOut-4" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="false" Impedance="8 Ω" />
+
+<item itemtype="KeyPad" CircId="KeyPad-5" mainComp="false" Show_id="false" Show_Val="false" Pos="836,356" rotation="0" hflip="1" vflip="1" label="KeyPad-5" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="4 _Buttons" Cols="3 _Buttons" Key_Labels="123456789*0#" />
+
+<item itemtype="Led" CircId="Led-18" mainComp="false" Show_id="false" Show_Val="false" Pos="740,612" rotation="0" hflip="1" vflip="1" label="Led-18" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="true" Threshold="1.8 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-19" mainComp="false" Show_id="false" Show_Val="false" Pos="740,588" rotation="0" hflip="1" vflip="1" label="Led-19" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="true" Threshold="3.5 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Hd44780" CircId="Hd44780-149" mainComp="false" Show_id="true" Show_Val="false" Pos="604,412" rotation="0" hflip="1" vflip="1" label="Hd44780-149" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2 _Rows" Cols="16 _Columns" />
+
+<item itemtype="Resistor" CircId="Resistor-166" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="700,612" rotation="0" hflip="1" vflip="1" label="Resistor-166" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Push" CircId="Push-191" mainComp="false" Show_id="false" Show_Val="false" Pos="632,564" rotation="0" hflip="1" vflip="1" label="Push-191" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Ground" CircId="Ground-193" mainComp="false" Show_id="false" Show_Val="false" Pos="600,580" rotation="0" hflip="1" vflip="1" label="Ground-193" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Push" CircId="Push-195" mainComp="false" Show_id="false" Show_Val="false" Pos="632,516" rotation="0" hflip="1" vflip="1" label="Push-195" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Ground" CircId="Ground-196" mainComp="false" Show_id="false" Show_Val="false" Pos="600,532" rotation="0" hflip="1" vflip="1" label="Ground-196" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="connector-167" startpinid="Led-19-lPin" endpinid="Uno-1-10" pointList="724,588,724,540,776,540" />
+
+<item itemtype="Connector" uid="connector-168" startpinid="KeyPad-5-Pin0" endpinid="Uno-1-A0" pointList="884,364,964,364,964,492,920,492" />
+
+<item itemtype="Connector" uid="connector-169" startpinid="KeyPad-5-Pin1" endpinid="Uno-1-A1" pointList="884,380,956,380,956,484,920,484" />
+
+<item itemtype="Connector" uid="connector-170" startpinid="KeyPad-5-Pin2" endpinid="Uno-1-A2" pointList="884,396,948,396,948,476,920,476" />
+
+<item itemtype="Connector" uid="connector-171" startpinid="KeyPad-5-Pin3" endpinid="Uno-1-A3" pointList="884,412,940,412,940,468,920,468" />
+
+<item itemtype="Connector" uid="connector-172" startpinid="Servo-2-in0" endpinid="Uno-1-Vin" pointList="928,508,920,508" />
+
+<item itemtype="Connector" uid="connector-173" startpinid="Servo-2-in1" endpinid="Uno-1-GND1" pointList="928,524,920,524" />
+
+<item itemtype="Connector" uid="connector-174" startpinid="Hd44780-149-dataPin7" endpinid="Uno-1-7" pointList="700,420,764,420,764,508,776,508" />
+
+<item itemtype="Connector" uid="connector-175" startpinid="Hd44780-149-dataPin6" endpinid="Uno-1-6" pointList="692,420,692,428,756,428,756,500,776,500" />
+
+<item itemtype="Connector" uid="connector-176" startpinid="Hd44780-149-dataPin5" endpinid="Uno-1-5" pointList="684,420,684,436,748,436,748,492,776,492" />
+
+<item itemtype="Connector" uid="connector-177" startpinid="Hd44780-149-dataPin4" endpinid="Uno-1-4" pointList="676,420,676,444,740,444,740,484,776,484" />
+
+<item itemtype="Connector" uid="connector-178" startpinid="Hd44780-149-PinRS" endpinid="Uno-1-8" pointList="620,420,620,460,700,460,700,524,776,524" />
+
+<item itemtype="Connector" uid="connector-179" startpinid="Hd44780-149-PinEn" endpinid="Uno-1-9" pointList="636,420,636,452,708,452,708,532,776,532" />
+
+<item itemtype="Connector" uid="connector-180" startpinid="AudioOut-4-rPin" endpinid="Uno-1-GND2" pointList="636,484,676,484,676,572,776,572" />
+
+<item itemtype="Connector" uid="connector-181" startpinid="Resistor-166-rPin" endpinid="Led-18-lPin" pointList="716,612,724,612" />
+
+<item itemtype="Connector" uid="connector-182" startpinid="Resistor-166-lPin" endpinid="Uno-1-11" pointList="684,612,684,548,776,548" />
+
+<item itemtype="Connector" uid="connector-183" startpinid="AudioOut-4-lPin" endpinid="Uno-1-12" pointList="636,476,692,476,692,556,776,556" />
+
+<item itemtype="Connector" uid="connector-184" startpinid="Servo-2-in2" endpinid="Uno-1-3" pointList="928,540,836,540,836,476,776,476" />
+
+<item itemtype="Connector" uid="Connector-188" startpinid="KeyPad-5-Pin4" endpinid="Uno-1-A4" pointList="836,428,836,460,920,460" />
+
+<item itemtype="Connector" uid="Connector-189" startpinid="KeyPad-5-Pin5" endpinid="Uno-1-A5" pointList="852,428,852,452,920,452" />
+
+<item itemtype="Connector" uid="Connector-190" startpinid="KeyPad-5-Pin6" endpinid="Uno-1-2" pointList="868,428,868,468,776,468" />
+
+<item itemtype="Connector" uid="Connector-192" startpinid="Push-191-switch0pinN" endpinid="Uno-1-13" pointList="648,564,776,564" />
+
+<item itemtype="Connector" uid="Connector-194" startpinid="Push-191-pinP0" endpinid="Ground-193-Gnd" pointList="616,564,600,564" />
+
+<item itemtype="Connector" uid="Connector-197" startpinid="Ground-196-Gnd" endpinid="Push-195-pinP0" pointList="600,516,616,516" />
+
+<item itemtype="Connector" uid="Connector-198" startpinid="Push-195-switch0pinN" endpinid="Uno-1-1" pointList="648,516,732,516,732,460,776,460" />
+
+</circuit>
